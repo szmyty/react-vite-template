@@ -57,7 +57,7 @@ indent_size = 2
 
 # Specific settings for JavaScript and TypeScript files
 [*.{js,ts}]
-# Use 2 spaces for indentation in JavaScript and TypeScript files
+# Use 4 spaces for indentation in JavaScript and TypeScript files
 indent_size = 4
 
 # Specific settings for Python files

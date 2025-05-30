@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 @layer base {
+  @reference "tailwindcss";
   body {
     @apply font-sans;
   }

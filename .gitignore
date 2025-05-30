@@ -1,0 +1,21 @@
+# Node
+node_modules/
+.env*
+dist/
+.storybook-cache/
+.vite/
+coverage/
+
+# Mac
+.DS_Store
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+
+# Editor directories
+.idea/
+.vscode/
+
+# VSCode setting
+*.code-workspace

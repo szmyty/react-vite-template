@@ -1,0 +1,63 @@
+{
+  "name": "react-vite-template",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "storybook": "storybook dev -p 6006",
+    "storybook:build": "storybook build",
+    "test": "vitest",
+    "lint": "eslint 'src/**/*.{ts,tsx}'",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "*",
+    "axios": "*",
+    "normalize.css": "*",
+    "react": "*",
+    "react-dom": "*",
+    "react-redux": "*",
+    "react-router-dom": "*"
+  },
+  "devDependencies": {
+    "@storybook/addon-a11y": "*",
+    "@storybook/addon-essentials": "*",
+    "@storybook/addon-interactions": "*",
+    "@storybook/addon-links": "*",
+    "@storybook/react-vite": "*",
+    "@testing-library/jest-dom": "*",
+    "@testing-library/react": "*",
+    "@types/react": "*",
+    "@types/react-dom": "*",
+    "@vitejs/plugin-react": "*",
+    "autoprefixer": "*",
+    "cspell": "*",
+    "eslint": "*",
+    "eslint-config-airbnb": "*",
+    "eslint-config-airbnb-typescript": "*",
+    "eslint-config-prettier": "*",
+    "eslint-plugin-import": "*",
+    "eslint-plugin-jsx-a11y": "*",
+    "eslint-plugin-prettier": "*",
+    "eslint-plugin-react": "*",
+    "eslint-plugin-react-hooks": "*",
+    "husky": "*",
+    "lint-staged": "*",
+    "postcss": "*",
+    "prettier": "*",
+    "tailwindcss": "*",
+    "typescript": "*",
+    "vite": "*",
+    "vite-plugin-env-compatible": "*",
+    "vite-plugin-eslint": "*",
+    "vite-plugin-svgr": "*",
+    "vite-tsconfig-paths": "*",
+    "vitest": "*"
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": ["eslint --fix", "prettier --write"],
+    "*.{js,jsx,json,css,md}": ["prettier --write"]
+  }
+}

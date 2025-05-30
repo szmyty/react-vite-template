@@ -4,6 +4,8 @@ This template provides a modern frontend stack with React, Vite and TypeScript. 
 
 ## Getting Started
 
+Copy `.env.example` to `.env` and update `VITE_API_URL` if necessary.
+
 ```bash
 pnpm install
 pnpm run dev

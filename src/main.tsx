@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { Provider } from 'react-redux';
 import AppRoutes from './routes';
 import { store } from './store';
+import 'normalize.css';
 import './styles/global.css';
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(

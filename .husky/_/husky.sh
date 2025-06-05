@@ -1,15 +1,9 @@
+echo "husky - DEPRECATED
+
+Please remove the following two lines from $0:
+
 #!/usr/bin/env sh
-if [ -z "$husky_skip_init" ]; then
-  debug() {
-    [ "$HUSKY_DEBUG" = "1" ] && echo "husky (debug) - $1"
-  }
-  if [ -f ~/.huskyrc ]; then
-    debug "source ~/.huskyrc"
-    . ~/.huskyrc
-  fi
-  export husky_skip_init=1
-  sh -e "$0" "$@"
-  exitCode="$?"
-  unset husky_skip_init
-  exit "$exitCode"
-fi
+. \"\$(dirname -- \"\$0\")/_/husky.sh\"
+
+They WILL FAIL in v10.0.0
+"

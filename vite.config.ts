@@ -1,6 +1,6 @@
 import path from 'path';
 import { fileURLToPath } from 'url';
-import { defineConfig } from 'vite';
+import { defineConfig } from 'vitest/config';
 import react from '@vitejs/plugin-react';
 import svgr from 'vite-plugin-svgr';
 import envCompatible from 'vite-plugin-env-compatible';
@@ -12,22 +12,22 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 // Define constants
-const ESLINT_CONFIG_PATH = path.resolve(__dirname, '.eslintrc.cjs');
+const ESLINT_CONFIG_PATH = path.resolve(__dirname, 'eslint.config.cjs');
 
 export default defineConfig({
-  plugins: [
-    react({
-      jsxRuntime: 'automatic',
-    }),
-    svgr(),
-    envCompatible(),
-    eslint({
-      overrideConfigFile: ESLINT_CONFIG_PATH,
-      include: ['src/**/*.ts', 'src/**/*.tsx'],
-      cacheLocation: 'node_modules/.cache/eslint',
-      cache: true,
-      exclude: ['/virtual:/**', 'node_modules/**'],
-    }),
-    tsconfigPaths(),
-  ],
+    plugins: [
+        react({
+            jsxRuntime: 'automatic',
+        }),
+        svgr(),
+        envCompatible(),
+        eslint({
+            overrideConfigFile: ESLINT_CONFIG_PATH,
+            include: ['src/**/*.ts', 'src/**/*.tsx'],
+            cacheLocation: 'node_modules/.cache/eslint',
+            cache: true,
+            exclude: ['/virtual:/**', 'node_modules/**'],
+        }),
+        tsconfigPaths(),
+    ],
 });

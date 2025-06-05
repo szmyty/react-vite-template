@@ -1,5 +1,8 @@
 import { defineConfig } from 'cspell';
 
+// Timestamp for unique report filenames
+const utcTimestamp = Math.floor(Date.now() / 1000);
+
 export default defineConfig({
     $schema: "https://raw.githubusercontent.com/streetsidesoftware/cspell/main/cspell.schema.json",
     version: '0.2',
@@ -43,7 +46,11 @@ export default defineConfig({
     noConfigSearch: true,
     readonly: false,
     reporters: [
-
+        [
+            "@cspell/cspell-json-reporter", {
+                "outFile": `reports/cspell/cspell-report-${utcTimestamp}.json`
+            }
+        ]
     ],
     useGitignore: true,
     gitignoreRoot: [],

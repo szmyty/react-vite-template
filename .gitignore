@@ -16,10 +16,16 @@ yarn-debug.log*
 
 # Editor directories
 .idea/
-.vscode/
+.vscode/*
+!.vscode/dictionaries
+
 
 # VSCode setting
 # *.code-workspace
 
 .history
 **/.history
+
+**/.cache
+
+

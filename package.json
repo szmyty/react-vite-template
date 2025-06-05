@@ -10,7 +10,8 @@
         "storybook:build": "storybook build",
         "test": "vitest",
         "lint": "eslint 'src/**/*.{ts,tsx}'",
-        "prepare": "husky install"
+        "prepare": "husky install",
+        "lint:spellcheck": "cspell --config .cspell.config.mjs"
     },
     "dependencies": {
         "@reduxjs/toolkit": "^2.8.2",
